@@ -117,9 +117,18 @@ class ChinaTelecom:
     def do_task(self):
         url = "https://wapside.189.cn:9001/jt-sign/paradise/polymerize"
         for task in self.task_list:
+
+
             if "翻牌抽好礼" in task["title"] or "查看我的订单" in task["title"] or "查看我的云盘" in task[
                 "title"] or "查看权益中心" in task["title"] or "访问宽带余额" in task["title"] or "访问“我的宽带”" in \
-                    task["title"] or "查看“装修进度”" in task["title"] or "查看视频彩铃" in task["title"]:
+                    task["title"] or "查看“装修进度”" in task["title"] or "查看视频彩铃" in task["title"] \
+                    or "登录任务" in task["title"] or "打开消息" in task["title"] or "浏览星播客频道" in \
+                task["title"] or "查看我的金豆" in task["title"]:
+
+            # if "翻牌抽好礼" in task["title"] or "查看我的订单" in task["title"] or "查看我的云盘" in task[
+            #     "title"] or "查看权益中心" in task["title"] or "访问宽带余额" in task["title"] or "访问“我的宽带”" in \
+            #         task["title"] or "查看“装修进度”" in task["title"] or "查看视频彩铃" in task["title"]:
+
                 # if "翻牌抽好礼" in task["title"] or "查看我的订单" in task["title"] or "查看我的云盘" in task["title"]:
                 #print_now(f'{task["title"]}----{task["taskId"]}')
                 print_now(f'{task["title"]}')
